@@ -86,7 +86,9 @@ theme: gradient
 3. 运行
 
 ```
-$ hexo s
+$ hexo clean //清理public的内容
+$ hexo g //重新生成
+$ hexo s //发布
 ```
 
 此时再打开 http://localhost:4000/ 就能看到我们的主题已经替换成功了
