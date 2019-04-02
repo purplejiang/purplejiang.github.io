@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>配置github SSH key | 我的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="查看.ssh\id_rsa.pub 文件是否存在，若存在直接复制即可，若不存在则需重新生成(windows 下在 C:/Users/用户名/.ssh 目录中)  1$ cd ~/.ssh  生成 SSH key  1ssh-keygen -t rsa -C &amp;quot;邮件地址&amp;quot; 连续回车后，找到.ssh\id_rsa.pub 文件，打开并复制里面的内容">
+<meta property="og:type" content="article">
+<meta property="og:title" content="配置github SSH key">
+<meta property="og:url" content="http://yoursite.com/2019/04/02/配置github-SSH-key/index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="查看.ssh\id_rsa.pub 文件是否存在，若存在直接复制即可，若不存在则需重新生成(windows 下在 C:/Users/用户名/.ssh 目录中)  1$ cd ~/.ssh  生成 SSH key  1ssh-keygen -t rsa -C &amp;quot;邮件地址&amp;quot; 连续回车后，找到.ssh\id_rsa.pub 文件，打开并复制里面的内容">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2019/04/02/配置github-SSH-key/avatar-settings.png">
+<meta property="og:image" content="http://yoursite.com/2019/04/02/配置github-SSH-key/ssh.png">
+<meta property="og:updated_time" content="2019-04-02T08:53:22.680Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="配置github SSH key">
+<meta name="twitter:description" content="查看.ssh\id_rsa.pub 文件是否存在，若存在直接复制即可，若不存在则需重新生成(windows 下在 C:/Users/用户名/.ssh 目录中)  1$ cd ~/.ssh  生成 SSH key  1ssh-keygen -t rsa -C &amp;quot;邮件地址&amp;quot; 连续回车后，找到.ssh\id_rsa.pub 文件，打开并复制里面的内容">
+<meta name="twitter:image" content="http://yoursite.com/2019/04/02/配置github-SSH-key/avatar-settings.png">
+  
+    <link rel="alternate" href="/atom.xml" title="我的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">我的博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-配置github-SSH-key" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/02/配置github-SSH-key/" class="article-date">
+  <time datetime="2019-04-02T07:19:37.000Z" itemprop="datePublished">2019-04-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      配置github SSH key
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>查看.ssh\id_rsa.pub 文件是否存在，若存在直接复制即可，若不存在则需重新生成(windows 下在 C:/Users/用户名/.ssh 目录中)</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/.ssh</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>生成 SSH key</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;邮件地址&quot;</span><br></pre></td></tr></table></figure>
+<p>连续回车后，找到.ssh\id_rsa.pub 文件，打开并复制里面的内容</p>
+<a id="more"></a>
+<blockquote>
+<p>进入自己的 github，点击 Settings</p>
+</blockquote>
+<img src="/2019/04/02/配置github-SSH-key/avatar-settings.png">
+<blockquote>
+<p>选择 SSH and GPG keys—-&gt;新增 SSH key—&gt;把刚刚复制的内容填写到 key 中，title 随便填，保存即可</p>
+</blockquote>
+<img src="/2019/04/02/配置github-SSH-key/ssh.png">
+<blockquote>
+<p>测试是否成功</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$  ssh -T git@github.com</span><br><span class="line"></span><br><span class="line">Warning: Permanently added the RSA host key for IP address &apos;192.30.255.112&apos; to the list of known hosts.</span><br><span class="line">Hi purplejiang! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
+<p>此时 SSH 已经配置成功，虽然有个 warning，但是不影响使用。但是有个警告对于有强迫症的人来说实在不爽，下面我们就来消除这个<br>warning</p>
+<p>Warning 告诉我们要为 IP 为’192.30.255.112’的主机（RSA 连接的）持久添加到 hosts 文件中，那么我们就打开 hosts 文件添加一行<br>即可消除警告</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mac中hosts文件地址：/private/etc/host</span><br><span class="line"></span><br><span class="line">192.30.255.112 github.com</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>最后配置</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;liuxianan&quot; // 你的github用户名</span><br><span class="line">$ git config --global user.email  &quot;xxx@qq.com&quot; //填写你的github注册邮箱</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/04/02/配置github-SSH-key/" data-id="cjtzkk6740001byc1qrvr1pkz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/04/02/hexo-blog搭建/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">hexo blog搭建</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/04/02/配置github-SSH-key/">配置github SSH key</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/02/hexo-blog搭建/">hexo blog搭建</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/02/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 purplejiang<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
