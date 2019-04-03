@@ -2,6 +2,7 @@
 title: hexo blog搭建
 date: 2019-04-02 10:45:12
 tags:
+  - hexo
 ---
 
 #### 安装 hexo
@@ -246,4 +247,40 @@ jsonContent:
 
 ```
 avatar: /images/avatar.jpg
+```
+
+> categories 和 tags 页面不显示解决办法
+
+1. 方法 1:对应文件添加 {{tags}}
+
+```
+scaffolds/draft.md
+
+---
+title: {{ title }}
+tags: {{ tags }}
+---
+
+scaffolds/post.md
+
+---
+title: {{ title }}
+date: {{ date }}
+tags: {{ tags }}
+---
+```
+
+2. 方法 2
+
+```
+hexo new page "tags"
+hexo new page "categories"
+
+编辑 /tags/index.md
+type: "tags"
+layout: "tags"
+
+编辑 /categories/index.md
+type: "categories"
+layout: "categories"
 ```
