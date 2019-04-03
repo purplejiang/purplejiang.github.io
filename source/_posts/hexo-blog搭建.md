@@ -192,3 +192,58 @@ $ hexo d
 我们新建一个分支 hexo 用户维护我们的 blog 的源代码，这样我们可以很方便的在另一台电脑上进行编辑了。当切换电脑时，只需
 clone hexo 分支上的代码，执行 npm i 安装项目依赖即可，安装完成后就可以进行 blog 的编辑、生成、发布了，注意当我们发布新的
 blog 时，需更新一份源代码到 hexo 分支
+
+### yilia 主题
+
+> 使用步骤
+
+1.下载
+
+```
+git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
+```
+
+2.修改根目录的\_config.yml 文件
+
+```
+theme: yilia
+```
+
+> yilia 主题所有文章模块确实问题解决方案（content.json 404）
+
+1.根目录下运行
+
+```
+npm i hexo-generator-json-content --save
+```
+
+2.在根目录的\_config.yml 文件中增加如下文件
+
+```
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
+```
+
+> 配置头像
+
+修改 themes/yillia/\_config.ymal 文件
+
+```
+avatar: /images/avatar.jpg
+```
