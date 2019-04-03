@@ -22,7 +22,7 @@
 <meta property="og:image" content="http://yoursite.com/images/more.png">
 <meta property="og:image" content="http://yoursite.com/images/more-result.png">
 <meta property="og:image" content="http://yoursite.com/2019/04/02/hexo-blog搭建/d-error.png">
-<meta property="og:updated_time" content="2019-04-02T09:24:14.882Z">
+<meta property="og:updated_time" content="2019-04-03T06:12:53.426Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo blog搭建">
 <meta name="twitter:description" content="安装 hexo1$ npm i -g hexo 若安装速度过慢，可使用淘宝镜像源–registry=https://registry.npm.taobao.org hexo 搭建 blog1$ hexo init &amp;lt;name&amp;gt; 此时会完成 hexo 项目的初始化、并下载安装项目的依赖。name 可选，若无，则会在当前文件夹下初始化项目，如有则在 name 文件夹下初始化项目">
@@ -264,6 +264,25 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
 <p>此时即可通过<a href="https://username.github.io/查看了" target="_blank" rel="noopener">https://username.github.io/查看了</a></p>
 <p>由于发布的时候只会将生成的 public 文件夹下的静态文件上传到 github 的 master 分支，当我们切换电脑又该怎么写 blog 呢，所以<br>我们新建一个分支 hexo 用户维护我们的 blog 的源代码，这样我们可以很方便的在另一台电脑上进行编辑了。当切换电脑时，只需<br>clone hexo 分支上的代码，执行 npm i 安装项目依赖即可，安装完成后就可以进行 blog 的编辑、生成、发布了，注意当我们发布新的<br>blog 时，需更新一份源代码到 hexo 分支</p>
+<h3 id="yilia-主题"><a href="#yilia-主题" class="headerlink" title="yilia 主题"></a>yilia 主题</h3><blockquote>
+<p>使用步骤</p>
+</blockquote>
+<p>1.下载</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</span><br></pre></td></tr></table></figure>
+<p>2.修改根目录的_config.yml 文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: yilia</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>yilia 主题所有文章模块确实问题解决方案（content.json 404）</p>
+</blockquote>
+<p>1.根目录下运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-generator-json-content --save</span><br></pre></td></tr></table></figure>
+<p>2.在根目录的_config.yml 文件中增加如下文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">jsonContent:</span><br><span class="line">  meta: false</span><br><span class="line">  pages: false</span><br><span class="line">  posts:</span><br><span class="line">    title: true</span><br><span class="line">    date: true</span><br><span class="line">    path: true</span><br><span class="line">    text: false</span><br><span class="line">    raw: false</span><br><span class="line">    content: false</span><br><span class="line">    slug: false</span><br><span class="line">    updated: false</span><br><span class="line">    comments: false</span><br><span class="line">    link: false</span><br><span class="line">    permalink: false</span><br><span class="line">    excerpt: false</span><br><span class="line">    categories: false</span><br><span class="line">    tags: true</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>配置头像</p>
+</blockquote>
+<p>修改 themes/yillia/_config.ymal 文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">avatar: /images/avatar.jpg</span><br></pre></td></tr></table></figure>
 
       
 
