@@ -130,3 +130,26 @@ env   指定环境，使用 env 关键字指定你想启用的环境，并设置
 rules 启用额外的规则或覆盖默认的规则
 globals 声明在代码中的自定义全局变量
 ```
+
+> 如有需要，在使用 git 每次提交之前，可配置 eslint 检测
+
+- 安装 pre-commit
+
+```
+npm i pre-commit --save-dev
+```
+
+- 在 package.json 中进行配置
+
+```
+{
+  "scripts": {
+    "eslint": "eslint --ext .js src"
+  }
+  ...
+  "pre-commit": [
+    "eslint"
+  ]
+}
+
+```
