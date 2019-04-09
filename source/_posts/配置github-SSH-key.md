@@ -2,6 +2,7 @@
 title: 配置github SSH key
 date: 2019-04-02 15:19:37
 tags:
+  - SSH key
 ---
 
 > 查看.ssh\id_rsa.pub 文件是否存在，若存在直接复制即可，若不存在则需重新生成(windows 下在 C:/Users/用户名/.ssh 目录中)
