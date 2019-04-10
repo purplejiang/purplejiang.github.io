@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>React项目中使用ESlint | 我的博客</title>
+  <title>使用nrm切换npm源 | 我的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装 eslint  1npm i eslint --save-dev  新建 eslint 的配置文件 .eslintrc.js  123module.exports = &amp;#123;&amp;#125;">
-<meta name="keywords" content="react,ESlint">
+  <meta name="description" content="nrm 是什么nrm 是一个 npm 源管理器，允许你快速地在 npm 源间切换 npm 切换使用源查看 npm 源地址 1npm config list">
+<meta name="keywords" content="nrm,npm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React项目中使用ESlint">
-<meta property="og:url" content="http://yoursite.com/2019/04/09/React项目中使用ESlint/index.html">
+<meta property="og:title" content="使用nrm切换npm源">
+<meta property="og:url" content="http://yoursite.com/2019/04/10/使用nrm切换npm源/index.html">
 <meta property="og:site_name" content="我的博客">
-<meta property="og:description" content="安装 eslint  1npm i eslint --save-dev  新建 eslint 的配置文件 .eslintrc.js  123module.exports = &amp;#123;&amp;#125;">
+<meta property="og:description" content="nrm 是什么nrm 是一个 npm 源管理器，允许你快速地在 npm 源间切换 npm 切换使用源查看 npm 源地址 1npm config list">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-09T06:12:44.410Z">
+<meta property="og:image" content="http://yoursite.com/2019/04/10/使用nrm切换npm源/nrmls.png">
+<meta property="og:updated_time" content="2019-04-10T10:04:45.130Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="React项目中使用ESlint">
-<meta name="twitter:description" content="安装 eslint  1npm i eslint --save-dev  新建 eslint 的配置文件 .eslintrc.js  123module.exports = &amp;#123;&amp;#125;">
+<meta name="twitter:title" content="使用nrm切换npm源">
+<meta name="twitter:description" content="nrm 是什么nrm 是一个 npm 源管理器，允许你快速地在 npm 源间切换 npm 切换使用源查看 npm 源地址 1npm config list">
+<meta name="twitter:image" content="http://yoursite.com/2019/04/10/使用nrm切换npm源/nrmls.png">
   
     <link rel="alternative" href="/atom.xml" title="我的博客" type="application/atom+xml">
   
@@ -149,85 +151,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-React项目中使用ESlint" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-使用nrm切换npm源" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      React项目中使用ESlint
+      使用nrm切换npm源
     </h1>
   
 
         
-        <a href="/2019/04/09/React项目中使用ESlint/" class="archive-article-date">
-  	<time datetime="2019-04-09T11:45:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-09</time>
+        <a href="/2019/04/10/使用nrm切换npm源/" class="archive-article-date">
+  	<time datetime="2019-04-10T12:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>安装 eslint</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i eslint --save-dev</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>新建 eslint 的配置文件 .eslintrc.js</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h3 id="nrm-是什么"><a href="#nrm-是什么" class="headerlink" title="nrm 是什么"></a>nrm 是什么</h3><p>nrm 是一个 npm 源管理器，允许你快速地在 npm 源间切换</p>
+<h3 id="npm-切换使用源"><a href="#npm-切换使用源" class="headerlink" title="npm 切换使用源"></a>npm 切换使用源</h3><p>查看 npm 源地址</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config list</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<blockquote>
-<p>限定使用范围。在.eslintrc.js 文件中配置 root</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;root&quot;: true</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>默认情况下，ESLint 会在所有父级目录里寻找配置文件，一直到根目录。为了将 ESLint 限制到一个特定的项目，我们就需要在该目录<br>中添加上面的配置项。ESLint 一旦发现配置文件中有 “root”: true，它就会停止在父级目录中寻找。</p>
-<blockquote>
-<p>安装 eslint-plugin-react，用于识别 react 中的一些语法检验</p>
-</blockquote>
-<p><a href="https://github.com/yannickcr/eslint-plugin-react" target="_blank" rel="noopener">eslint-plugin-react</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install eslint-plugin-react</span><br></pre></td></tr></table></figure>
-<p>增加配置 extends</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;extends&quot;: [</span><br><span class="line">    &quot;eslint:recommended&quot;,</span><br><span class="line">    &quot;plugin:react/recommended&quot;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>增加配置 plugins</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;plugins&quot;: [</span><br><span class="line">    &quot;react&quot;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>安装 babel-eslint</p>
-</blockquote>
-<p><a href="https://github.com/babel/babel-eslint" target="_blank" rel="noopener">babel-eslint</a>，用于识别 es6 的新语法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install babel-eslint --save-dev</span><br></pre></td></tr></table></figure>
-<p>在 .eslintrc.js 配置文件中添加如下配置项代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">parser: &apos;babel-eslint&apos; // eslint的解析器</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>添加 rules 配置项</p>
-</blockquote>
-<p>ESLint 附带有大量的规则。你可以使用注释或配置文件修改你项目中要使用的规则。要改变一个规则设置，你必须将规则 ID 设置为下<br>列值之一：</p>
-<ul>
-<li>“off” 或 0 - 关闭规则</li>
-<li>“warn” 或 1 - 开启规则，使用警告级别的错误：warn (不会导致程序退出)</li>
-<li>“error” 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)</li>
-</ul>
-<p>rules 配置详见 <a href="https://cn.eslint.org/docs/rules/" target="_blank" rel="noopener">ESlint 官网 rule</a></p>
-<blockquote>
-<p>.eslint.js 部分配置</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">module.exports=&#123;</span><br><span class="line">  root: true,</span><br><span class="line">  parser: &apos;babel-eslint&apos;, // 指定eslint的解析器</span><br><span class="line">  parserOptions: &#123; // 设置解析器选项</span><br><span class="line">    ecmaFeatures: &#123;</span><br><span class="line">      jsx: true,</span><br><span class="line">      modules: true</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  env: &#123; // 环境</span><br><span class="line">    browser: true,</span><br><span class="line">    node: true,</span><br><span class="line">    es6: true</span><br><span class="line">  &#125;,</span><br><span class="line">  extends: [&apos;eslint:recommended&apos;, &apos;plugin:react/recommended&apos;],// 指定eslint规范</span><br><span class="line">  plugins: [&apos;react&apos;],</span><br><span class="line">  rules: &#123;</span><br><span class="line">    ...</span><br><span class="line">    quotes: [&apos;error&apos;, &apos;single&apos;],</span><br><span class="line">    semi: [&apos;error&apos;, &apos;always&apos;],</span><br><span class="line">    ...</span><br><span class="line">    // react配置</span><br><span class="line">    &apos;react/prop-types&apos;: 0,</span><br><span class="line">    &apos;react/no-unescaped-entities&apos;: 0</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>eslint 配置项解释</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">root 限定配置文件的使用范围</span><br><span class="line">parser 指定eslint的解析器</span><br><span class="line">parserOptions 设置解析器选项</span><br><span class="line">extends 指定eslint规范</span><br><span class="line">plugins 引用第三方的插件，使用 plugins 关键字来存放插件名字的列表</span><br><span class="line">env   指定环境，使用 env 关键字指定你想启用的环境，并设置它们为 true</span><br><span class="line">rules 启用额外的规则或覆盖默认的规则</span><br><span class="line">globals 声明在代码中的自定义全局变量</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>如有需要，在使用 git 每次提交之前，可配置 eslint 检测</p>
-</blockquote>
-<ul>
-<li>安装 pre-commit</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i pre-commit --save-dev</span><br></pre></td></tr></table></figure>
-<ul>
-<li>在 package.json 中进行配置</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;eslint&quot;: &quot;eslint --ext .js src&quot;</span><br><span class="line">  &#125;</span><br><span class="line">  ...</span><br><span class="line">  &quot;pre-commit&quot;: [</span><br><span class="line">    &quot;eslint&quot;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>修改 registry 地址</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm set registry https://registry.npm.taobao.org/</span><br></pre></td></tr></table></figure>
+<p>删除 registry 地址</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config rm registry</span><br></pre></td></tr></table></figure>
+<h3 id="nvm-安装及使用"><a href="#nvm-安装及使用" class="headerlink" title="nvm 安装及使用"></a>nvm 安装及使用</h3><p>安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install nrm -g</span><br></pre></td></tr></table></figure>
+<p>查看可选的源列表,带*号即为当前使用的配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm ls</span><br></pre></td></tr></table></figure>
+<img src="/2019/04/10/使用nrm切换npm源/nrmls.png">
+<p>查看当前使用的是哪个源</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm current</span><br></pre></td></tr></table></figure>
+<p>切到源<a href="http://r.cnpmjs.org/，" target="_blank" rel="noopener">http://r.cnpmjs.org/，</a> 命令： nrm use &lt;源的别名&gt;，即</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm use cnpm</span><br></pre></td></tr></table></figure>
+<p>用 nrm add 命令添加公司私有 npm 源,起个别名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm add &lt;别名&gt; &lt;源地址&gt;</span><br></pre></td></tr></table></figure>
+<p>测试速度</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ nrm test npm</span><br><span class="line"></span><br><span class="line">npm ---- 1045ms</span><br></pre></td></tr></table></figure>
+<p>删除源</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm del &lt;别名&gt;</span><br></pre></td></tr></table></figure>
 
       
 
@@ -262,11 +228,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">nrm</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">ESlint</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
         		</li>
       		
 		</ul>
@@ -322,7 +288,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/09/React项目中使用ESlint/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/10/使用nrm切换npm源/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -336,18 +302,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/04/10/node版本管理工具nvm的安装及使用/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          node版本管理工具nvm的安装及使用
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/04/02/配置github-SSH-key/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">配置github SSH key</div>
+    <a href="/2019/04/10/node版本管理工具nvm的安装及使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">node版本管理工具nvm的安装及使用</div>
       <i class="icon-circle-right"></i>
     </a>
   

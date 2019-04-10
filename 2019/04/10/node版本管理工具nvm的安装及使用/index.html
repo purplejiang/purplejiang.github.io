@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>React项目中使用ESlint | 我的博客</title>
+  <title>node版本管理工具nvm的安装及使用 | 我的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装 eslint  1npm i eslint --save-dev  新建 eslint 的配置文件 .eslintrc.js  123module.exports = &amp;#123;&amp;#125;">
-<meta name="keywords" content="react,ESlint">
+  <meta name="description" content="nvm 是什么nvm：node 版本管理工具，一个 nvm 可以管理很多 node 版本和 npm版本 卸载已经安装到全局的 node、npm(可选步骤)查看已经安装在全局的模块,卸载后可根据需要重装 1npm ls -g --depth=0 删除全局 node_modules 目录 1sudo rm -rf /usr/local/lib/node_modules">
+<meta name="keywords" content="nvm,node">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React项目中使用ESlint">
-<meta property="og:url" content="http://yoursite.com/2019/04/09/React项目中使用ESlint/index.html">
+<meta property="og:title" content="node版本管理工具nvm的安装及使用">
+<meta property="og:url" content="http://yoursite.com/2019/04/10/node版本管理工具nvm的安装及使用/index.html">
 <meta property="og:site_name" content="我的博客">
-<meta property="og:description" content="安装 eslint  1npm i eslint --save-dev  新建 eslint 的配置文件 .eslintrc.js  123module.exports = &amp;#123;&amp;#125;">
+<meta property="og:description" content="nvm 是什么nvm：node 版本管理工具，一个 nvm 可以管理很多 node 版本和 npm版本 卸载已经安装到全局的 node、npm(可选步骤)查看已经安装在全局的模块,卸载后可根据需要重装 1npm ls -g --depth=0 删除全局 node_modules 目录 1sudo rm -rf /usr/local/lib/node_modules">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-09T06:12:44.410Z">
+<meta property="og:image" content="http://yoursite.com/2019/04/10/node版本管理工具nvm的安装及使用/nvm-success.jpg">
+<meta property="og:updated_time" content="2019-04-10T09:35:31.342Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="React项目中使用ESlint">
-<meta name="twitter:description" content="安装 eslint  1npm i eslint --save-dev  新建 eslint 的配置文件 .eslintrc.js  123module.exports = &amp;#123;&amp;#125;">
+<meta name="twitter:title" content="node版本管理工具nvm的安装及使用">
+<meta name="twitter:description" content="nvm 是什么nvm：node 版本管理工具，一个 nvm 可以管理很多 node 版本和 npm版本 卸载已经安装到全局的 node、npm(可选步骤)查看已经安装在全局的模块,卸载后可根据需要重装 1npm ls -g --depth=0 删除全局 node_modules 目录 1sudo rm -rf /usr/local/lib/node_modules">
+<meta name="twitter:image" content="http://yoursite.com/2019/04/10/node版本管理工具nvm的安装及使用/nvm-success.jpg">
   
     <link rel="alternative" href="/atom.xml" title="我的博客" type="application/atom+xml">
   
@@ -149,85 +151,80 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-React项目中使用ESlint" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-node版本管理工具nvm的安装及使用" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      React项目中使用ESlint
+      node版本管理工具nvm的安装及使用
     </h1>
   
 
         
-        <a href="/2019/04/09/React项目中使用ESlint/" class="archive-article-date">
-  	<time datetime="2019-04-09T11:45:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-09</time>
+        <a href="/2019/04/10/node版本管理工具nvm的安装及使用/" class="archive-article-date">
+  	<time datetime="2019-04-10T11:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>安装 eslint</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i eslint --save-dev</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>新建 eslint 的配置文件 .eslintrc.js</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h3 id="nvm-是什么"><a href="#nvm-是什么" class="headerlink" title="nvm 是什么"></a>nvm 是什么</h3><p><a href="https://github.com/creationix/nvm/blob/master/README.md" target="_blank" rel="noopener">nvm</a>：node 版本管理工具，一个 nvm 可以管理很多 node 版本和 npm<br>版本</p>
+<h3 id="卸载已经安装到全局的-node、npm-可选步骤"><a href="#卸载已经安装到全局的-node、npm-可选步骤" class="headerlink" title="卸载已经安装到全局的 node、npm(可选步骤)"></a>卸载已经安装到全局的 node、npm(可选步骤)</h3><p>查看已经安装在全局的模块,卸载后可根据需要重装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm ls -g --depth=0</span><br></pre></td></tr></table></figure>
+<p>删除全局 node_modules 目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf /usr/local/lib/node_modules</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<blockquote>
-<p>限定使用范围。在.eslintrc.js 文件中配置 root</p>
+<p>删除 node</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm /usr/local/bin/node</span><br></pre></td></tr></table></figure>
+<p>删除全局 node 模块注册的软链</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd  /usr/local/bin &amp;&amp; ls -l | grep &quot;../lib/node_modules/&quot; | awk &apos;&#123;print $9&#125;&apos;| xargs rm</span><br></pre></td></tr></table></figure>
+<h3 id="安装-nvm"><a href="#安装-nvm" class="headerlink" title="安装 nvm"></a>安装 nvm</h3><blockquote>
+<p>curl 安装</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;root&quot;: true</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>默认情况下，ESLint 会在所有父级目录里寻找配置文件，一直到根目录。为了将 ESLint 限制到一个特定的项目，我们就需要在该目录<br>中添加上面的配置项。ESLint 一旦发现配置文件中有 “root”: true，它就会停止在父级目录中寻找。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>安装 eslint-plugin-react，用于识别 react 中的一些语法检验</p>
+<p>wget 安装</p>
 </blockquote>
-<p><a href="https://github.com/yannickcr/eslint-plugin-react" target="_blank" rel="noopener">eslint-plugin-react</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install eslint-plugin-react</span><br></pre></td></tr></table></figure>
-<p>增加配置 extends</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;extends&quot;: [</span><br><span class="line">    &quot;eslint:recommended&quot;,</span><br><span class="line">    &quot;plugin:react/recommended&quot;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>增加配置 plugins</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;plugins&quot;: [</span><br><span class="line">    &quot;react&quot;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>安装 babel-eslint</p>
-</blockquote>
-<p><a href="https://github.com/babel/babel-eslint" target="_blank" rel="noopener">babel-eslint</a>，用于识别 es6 的新语法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install babel-eslint --save-dev</span><br></pre></td></tr></table></figure>
-<p>在 .eslintrc.js 配置文件中添加如下配置项代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">parser: &apos;babel-eslint&apos; // eslint的解析器</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>添加 rules 配置项</p>
-</blockquote>
-<p>ESLint 附带有大量的规则。你可以使用注释或配置文件修改你项目中要使用的规则。要改变一个规则设置，你必须将规则 ID 设置为下<br>列值之一：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash</span><br></pre></td></tr></table></figure>
+<p>安装完成后，使用 <font color="#ff0000">nvm</font> 命令查看是否安装成功，有输出则表示安装成功</p>
+<p>若出现</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm: command not found</span><br></pre></td></tr></table></figure>
+<p>此时需要在<font color="#ff0000">.bash_profile</font> 文件中新增配置代码并保存,如果没有该文件则新增</p>
 <ul>
-<li>“off” 或 0 - 关闭规则</li>
-<li>“warn” 或 1 - 开启规则，使用警告级别的错误：warn (不会导致程序退出)</li>
-<li>“error” 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)</li>
+<li>进入当前用户的 home 目录</li>
 </ul>
-<p>rules 配置详见 <a href="https://cn.eslint.org/docs/rules/" target="_blank" rel="noopener">ESlint 官网 rule</a></p>
-<blockquote>
-<p>.eslint.js 部分配置</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">module.exports=&#123;</span><br><span class="line">  root: true,</span><br><span class="line">  parser: &apos;babel-eslint&apos;, // 指定eslint的解析器</span><br><span class="line">  parserOptions: &#123; // 设置解析器选项</span><br><span class="line">    ecmaFeatures: &#123;</span><br><span class="line">      jsx: true,</span><br><span class="line">      modules: true</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  env: &#123; // 环境</span><br><span class="line">    browser: true,</span><br><span class="line">    node: true,</span><br><span class="line">    es6: true</span><br><span class="line">  &#125;,</span><br><span class="line">  extends: [&apos;eslint:recommended&apos;, &apos;plugin:react/recommended&apos;],// 指定eslint规范</span><br><span class="line">  plugins: [&apos;react&apos;],</span><br><span class="line">  rules: &#123;</span><br><span class="line">    ...</span><br><span class="line">    quotes: [&apos;error&apos;, &apos;single&apos;],</span><br><span class="line">    semi: [&apos;error&apos;, &apos;always&apos;],</span><br><span class="line">    ...</span><br><span class="line">    // react配置</span><br><span class="line">    &apos;react/prop-types&apos;: 0,</span><br><span class="line">    &apos;react/no-unescaped-entities&apos;: 0</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>eslint 配置项解释</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">root 限定配置文件的使用范围</span><br><span class="line">parser 指定eslint的解析器</span><br><span class="line">parserOptions 设置解析器选项</span><br><span class="line">extends 指定eslint规范</span><br><span class="line">plugins 引用第三方的插件，使用 plugins 关键字来存放插件名字的列表</span><br><span class="line">env   指定环境，使用 env 关键字指定你想启用的环境，并设置它们为 true</span><br><span class="line">rules 启用额外的规则或覆盖默认的规则</span><br><span class="line">globals 声明在代码中的自定义全局变量</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>如有需要，在使用 git 每次提交之前，可配置 eslint 检测</p>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~</span><br></pre></td></tr></table></figure>
 <ul>
-<li>安装 pre-commit</li>
+<li>新建.bash_profile 文件</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i pre-commit --save-dev</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ touch .bash_profile</span><br></pre></td></tr></table></figure>
 <ul>
-<li>在 package.json 中进行配置</li>
+<li>打开.bash_profile 文件</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;eslint&quot;: &quot;eslint --ext .js src&quot;</span><br><span class="line">  &#125;</span><br><span class="line">  ...</span><br><span class="line">  &quot;pre-commit&quot;: [</span><br><span class="line">    &quot;eslint&quot;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ open .bash_profile</span><br></pre></td></tr></table></figure>
+<ul>
+<li>输入代码并保存：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export NVM_DIR=&quot;$HOME/.nvm&quot;</span><br><span class="line">[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; \. &quot;$NVM_DIR/nvm.sh&quot;  # This loads nvm</span><br></pre></td></tr></table></figure>
+<ul>
+<li>运行命令,更新配置过的环境变量</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source .bash_profile</span><br></pre></td></tr></table></figure>
+<p>此时运行 nvm -v 会出现如下界面，就代表 nvm 安装成功了</p>
+<img src="/2019/04/10/node版本管理工具nvm的安装及使用/nvm-success.jpg">
+<p>此时我们就可以根据自己的需要随意切换我们的 node 版本了～～～～～～～～</p>
+<h3 id="nvm-的使用"><a href="#nvm-的使用" class="headerlink" title="nvm 的使用"></a>nvm 的使用</h3><ul>
+<li><font color="#ff0000">nvm ls</font> 列出所有安装的版本</li>
+<li><font color="#ff0000">nvm install &lt;version></font> 安装指定版本</li>
+<li><font color="#ff0000">nvm uninstall &lt;version></font> 删除已安装的指定版本</li>
+<li><font color="#ff0000">nvm use &lt;version></font>切换使用指定的版本 node</li>
+<li><font color="#ff0000">nvm current</font> 显示当前的版本</li>
+<li><font color="#ff0000">npm ls</font> 列出所有安装的版本</li>
+<li><font color="#ff0000">nvm ls-remote</font> 列出全部可以安装的版本号</li>
+</ul>
 
       
 
@@ -262,11 +259,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">nvm</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">ESlint</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
         		</li>
       		
 		</ul>
@@ -322,7 +319,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/09/React项目中使用ESlint/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/10/node版本管理工具nvm的安装及使用/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -336,18 +333,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/04/10/node版本管理工具nvm的安装及使用/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/04/10/使用nrm切换npm源/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          node版本管理工具nvm的安装及使用
+          使用nrm切换npm源
         
       </div>
     </a>
   
   
-    <a href="/2019/04/02/配置github-SSH-key/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">配置github SSH key</div>
+    <a href="/2019/04/09/React项目中使用ESlint/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">React项目中使用ESlint</div>
       <i class="icon-circle-right"></i>
     </a>
   
