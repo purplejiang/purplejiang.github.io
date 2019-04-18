@@ -6,15 +6,28 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: npm | 我的博客</title>
+  <title>如何发布一个简单的npm包 | 我的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="我的博客">
-<meta property="og:url" content="http://yoursite.com/tags/npm/index.html">
+  <meta name="description" content="注册 npm 账号首先去npm 官网上注册npm 账号,Username、Password、Email 发布的时候会使用到  创建自己的项目首先创建文件夹 npmtest，并进入目录">
+<meta name="keywords" content="npm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何发布一个简单的npm包">
+<meta property="og:url" content="http://yoursite.com/2019/04/18/如何发布一个简单的npm包/index.html">
 <meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="注册 npm 账号首先去npm 官网上注册npm 账号,Username、Password、Email 发布的时候会使用到  创建自己的项目首先创建文件夹 npmtest，并进入目录">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2019/04/18/如何发布一个简单的npm包/signup.png">
+<meta property="og:image" content="http://yoursite.com/2019/04/18/如何发布一个简单的npm包/init.png">
+<meta property="og:image" content="http://yoursite.com/2019/04/18/如何发布一个简单的npm包/nrm.png">
+<meta property="og:image" content="http://yoursite.com/2019/04/18/如何发布一个简单的npm包/login.png">
+<meta property="og:image" content="http://yoursite.com/2019/04/18/如何发布一个简单的npm包/error1.png">
+<meta property="og:image" content="http://yoursite.com/2019/04/18/如何发布一个简单的npm包/error2.png">
+<meta property="og:image" content="http://yoursite.com/2019/04/18/如何发布一个简单的npm包/delete.png">
+<meta property="og:updated_time" content="2019-04-18T09:21:08.510Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的博客">
+<meta name="twitter:title" content="如何发布一个简单的npm包">
+<meta name="twitter:description" content="注册 npm 账号首先去npm 官网上注册npm 账号,Username、Password、Email 发布的时候会使用到  创建自己的项目首先创建文件夹 npmtest，并进入目录">
+<meta name="twitter:image" content="http://yoursite.com/2019/04/18/如何发布一个简单的npm包/signup.png">
   
     <link rel="alternative" href="/atom.xml" title="我的博客" type="application/atom+xml">
   
@@ -144,36 +157,94 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-如何发布一个简单的npm包" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      如何发布一个简单的npm包
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/18/如何发布一个简单的npm包/" class="archive-article-date">
+
+        
+        <a href="/2019/04/18/如何发布一个简单的npm包/" class="archive-article-date">
   	<time datetime="2019-04-18T12:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-18</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/18/如何发布一个简单的npm包/">如何发布一个简单的npm包</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="注册-npm-账号"><a href="#注册-npm-账号" class="headerlink" title="注册 npm 账号"></a>注册 npm 账号</h3><p>首先去<a href="https://www.npmjs.com/" target="_blank" rel="noopener">npm 官网</a>上<a href="https://www.npmjs.com/signup" target="_blank" rel="noopener">注册</a>npm 账号,Username、Password、Email 发布的<br>时候会使用到</p>
+<img src="/2019/04/18/如何发布一个简单的npm包/signup.png">
+<h3 id="创建自己的项目"><a href="#创建自己的项目" class="headerlink" title="创建自己的项目"></a>创建自己的项目</h3><p>首先创建文件夹 npmtest，并进入目录</p>
+<a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir npmtest &amp;&amp; cd mpmtest</span><br></pre></td></tr></table></figure>
+<p>生成 package.json 文件，运行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></table></figure>
+<p>如果你想创建的是指定域的包，那么运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init --scope=@yourscopename</span><br></pre></td></tr></table></figure>
+<p>这里我选择了第二种方式</p>
+<img src="/2019/04/18/如何发布一个简单的npm包/init.png">
+<p>配置完毕后，开始写我们的自己的代码</p>
+<p>npmtest/index.js</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">export const isEmpty = obj =&gt; &#123;</span><br><span class="line">  return obj == null || obj == undefined || obj == &apos;&apos;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">export const sliceByIndex = (str, index) =&gt; &#123;</span><br><span class="line">  return str.slice(0, index);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h3><blockquote>
+<p>使用 nrm 切换我们的源为官方 npm 源，nrm 的使用详见另一篇文章<a href="../../10/使用nrm切换npm源">使用 nrm 切换 npm 源</a></p>
+</blockquote>
+<img src="/2019/04/18/如何发布一个简单的npm包/nrm.png">
+<blockquote>
+<p>使用我们注册的账号、密码、邮箱进行登录</p>
+</blockquote>
+<img src="/2019/04/18/如何发布一个简单的npm包/login.png">
+<blockquote>
+<p>使用 npm publish 发布</p>
+</blockquote>
+<p>报错</p>
+<img src="/2019/04/18/如何发布一个简单的npm包/error1.png">
+<p>这应该是发布私有包权限的问题，这里我们改为发布 public 公有的包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm publish --access public</span><br></pre></td></tr></table></figure>
+<img src="/2019/04/18/如何发布一个简单的npm包/error2.png">
+<p>这是因为没有验证邮箱,验证邮箱之后再发布就可以成功了</p>
 
-        <div class="article-info info-on-right">
-          
+<p>此时我们的包已经发布成功了,此时就能去 <a href="https://www.npmjs.com/" target="_blank" rel="noopener">npm 官网</a>搜索我们的包并进行使用了</p>
+<h3 id="使用我们的-npm-包"><a href="#使用我们的-npm-包" class="headerlink" title="使用我们的 npm 包"></a>使用我们的 npm 包</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i @purplej/npmtest</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import &#123;sliceByIndex&#125; from &apos;@purplej/npmtest&apos;</span><br><span class="line"></span><br><span class="line">console.log(sliceByIndex(&apos;dedssss&apos;,3))</span><br></pre></td></tr></table></figure>
+<h3 id="撤销-npm-包"><a href="#撤销-npm-包" class="headerlink" title="撤销 npm 包"></a>撤销 npm 包</h3><p>由于我们这是一个测试的 npm 包，所以需要删除,那么我们如何撤销我们 npm 包呢，使用如下命令即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm --force unpublish @purplej/npmtest //删除要用force强制删除</span><br></pre></td></tr></table></figure>
+<img src="/2019/04/18/如何发布一个简单的npm包/delete.png">
+<p>有人说超过 24 小时就不能删除了，由于此次的目的是学习如何发布一个简单的 npm 包，这一步就没有进行验证了</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -185,61 +256,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/18/如何发布一个简单的npm包/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/10/使用nrm切换npm源/" class="archive-article-date">
-  	<time datetime="2019-04-10T12:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-10</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/04/10/使用nrm切换npm源/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">使用nrm切换npm源</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/10/使用nrm切换npm源/">使用nrm切换npm源</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">nrm</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -262,9 +378,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
