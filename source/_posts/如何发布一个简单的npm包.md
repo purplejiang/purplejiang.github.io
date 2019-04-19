@@ -82,6 +82,30 @@ npm publish --access public
 
 此时我们的包已经发布成功了,此时就能去 [npm 官网](https://www.npmjs.com/)搜索我们的包并进行使用了
 
+### 更新 npm 包
+
+当我们对我们的项目内容进行更改后，需要重新发布，此时记得修改 pakage.json 的版本号，再发布。如初始版本为 1.0.0，修改后如
+下：
+
+{% asset_img version.png %}
+
+此时我们可以手动修改版本号，也可以运行下面的命令自动修改
+
+```
+npm version patch  #自动修改package.json文件版本号+1
+
+npm publish
+```
+
+更多命令, 如初始版本为 1.0.0，执行相关类型命令后，对应的语意为：
+
+```
+npm version patch  // 1.0.1 表示小的bug修复
+npm version minor // 1.1.0 表示新增一些小功能
+npm version major // 2.0.0 表示大的版本或大升级
+npm version preminor // 1.1.0-0 后面多了个0，表示预发布
+```
+
 ### 使用我们的 npm 包
 
 ```
@@ -104,4 +128,4 @@ npm --force unpublish @purplej/npmtest //删除要用force强制删除
 
 {% asset_img delete.png %}
 
-有人说超过 24 小时就不能删除了，由于此次的目的是学习如何发布一个简单的 npm 包，这一步就没有进行验证了
+有人说超过 24 小时就不能删除了(也有说 72 小时的)，由于此次的目的是学习如何发布一个简单的 npm 包，这一步就没有进行验证了
