@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>在mac上搭建开发环境 | 我的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.homebrew安装 homebrew,官网 1/usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot; 出现如下界面则代表安装成功">
-<meta name="keywords" content="homebrew">
+  <meta name="description" content="1. HomebrewHomebrew 是一款 Mac OS 平台下的软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以实现包管理，而不用你关心各种依赖和文件路径的情况，十分方便快捷。官网  前置   Xcode 命令行工具  1xcode-select --install  支持 shell (sh 或者 bash)   安装 Homebrew,  1/us">
+<meta name="keywords" content="Homebrew,item2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在mac上搭建开发环境">
 <meta property="og:url" content="http://yoursite.com/2019/06/10/在mac上搭建开发环境/index.html">
 <meta property="og:site_name" content="我的博客">
-<meta property="og:description" content="1.homebrew安装 homebrew,官网 1/usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot; 出现如下界面则代表安装成功">
+<meta property="og:description" content="1. HomebrewHomebrew 是一款 Mac OS 平台下的软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以实现包管理，而不用你关心各种依赖和文件路径的情况，十分方便快捷。官网  前置   Xcode 命令行工具  1xcode-select --install  支持 shell (sh 或者 bash)   安装 Homebrew,  1/us">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/2019/06/10/在mac上搭建开发环境/brew-success.png">
-<meta property="og:updated_time" content="2019-06-10T02:37:18.499Z">
+<meta property="og:updated_time" content="2019-06-10T10:37:38.078Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在mac上搭建开发环境">
-<meta name="twitter:description" content="1.homebrew安装 homebrew,官网 1/usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot; 出现如下界面则代表安装成功">
+<meta name="twitter:description" content="1. HomebrewHomebrew 是一款 Mac OS 平台下的软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以实现包管理，而不用你关心各种依赖和文件路径的情况，十分方便快捷。官网  前置   Xcode 命令行工具  1xcode-select --install  支持 shell (sh 或者 bash)   安装 Homebrew,  1/us">
 <meta name="twitter:image" content="http://yoursite.com/2019/06/10/在mac上搭建开发环境/brew-success.png">
   
     <link rel="alternative" href="/atom.xml" title="我的博客" type="application/atom+xml">
@@ -171,10 +171,144 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-homebrew"><a href="#1-homebrew" class="headerlink" title="1.homebrew"></a>1.homebrew</h3><p>安装 homebrew,<a href="https://brew.sh/" target="_blank" rel="noopener">官网</a></p>
+        <h3 id="1-Homebrew"><a href="#1-Homebrew" class="headerlink" title="1. Homebrew"></a>1. Homebrew</h3><p>Homebrew 是一款 Mac OS 平台下的软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以<br>实现包管理，而不用你关心各种依赖和文件路径的情况，十分方便快捷。<a href="https://brew.sh/" target="_blank" rel="noopener">官网</a></p>
+<blockquote>
+<p>前置</p>
+</blockquote>
+<ul>
+<li>Xcode 命令行工具</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
+<ul>
+<li>支持 shell (sh 或者 bash)</li>
+</ul>
+<blockquote>
+<p>安装 Homebrew,</p>
+</blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>出现如下界面则代表安装成功</p>
 <img src="/2019/06/10/在mac上搭建开发环境/brew-success.png">
+<blockquote>
+<p>使用</p>
+</blockquote>
+<ul>
+<li>安装包</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install &lt;packageName&gt;</span><br></pre></td></tr></table></figure>
+<p>eg: brew install node、brew install mysql</p>
+<ul>
+<li>卸载包</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew uninstall &lt;packageName&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>查询</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew search &lt;packageName&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>查看已安装包列表</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew list</span><br></pre></td></tr></table></figure>
+<ul>
+<li>查看当前版本</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew -v</span><br></pre></td></tr></table></figure>
+<ul>
+<li>更新</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew update</span><br></pre></td></tr></table></figure>
+<h3 id="2-Homebrew-Cask"><a href="#2-Homebrew-Cask" class="headerlink" title="2. Homebrew Cask"></a>2. Homebrew Cask</h3><p>brew-cask 允许你使用命令行安装 OS X 应用。几乎所有常用的应用都可以通过 brew-cask（Sublime Text、VirtualBox） 安装，而且<br>是从应用的官网上下载，所以你要安装新的应用时，建议用 brew-cask 安装。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eg: brew cask install google-chrome //安装goole</span><br></pre></td></tr></table></figure>
+<p>如果你不知道应用在 brew-cask 中的 ID，可以先用 brew search 命令搜索， 比如： brew search google</p>
+<h3 id="3-git"><a href="#3-git" class="headerlink" title="3. git"></a>3. git</h3><blockquote>
+<p>使用 Homebrew 安装 git</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure>
+<p>测试是否安装正常</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">which git</span><br><span class="line"></span><br><span class="line">/usr/local/bin/git</span><br></pre></td></tr></table></figure>
+<h3 id="4-iterm2"><a href="#4-iterm2" class="headerlink" title="4. iterm2"></a>4. iterm2</h3><blockquote>
+<p>使用 Homebrew 安装 iterm2</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install iterm2</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>替换默认背景图片</p>
+</blockquote>
+<p>iTerm2 -&gt; Preferences -&gt; Profiles-&gt; window -&gt; Background Image</p>
+<blockquote>
+<p>打开新的窗口/标签页的时候，默认情况下新窗口总是 HOME 目录，此时需要每次敲命令才能进入工作目录。如果想要这个新窗口在打<br>开的时候就自动进入工作目录，需要如下设置</p>
+</blockquote>
+<p>iTerm2 -&gt; Preferences -&gt; Profiles-&gt; General -&gt; Working Directory -&gt; 选择 Reuse previous seesion’s directory</p>
+<blockquote>
+<p>常用快捷键</p>
+</blockquote>
+<ul>
+<li>Tab 纵向分割：⌘+d Tab</li>
+<li>横向分割：⌘+shift+d</li>
+<li>切换 Tab 中的 pane：⌘ + [ 或者 ⌘+ opt + arrow</li>
+<li>关闭 panel：⌘ + w</li>
+<li>最大化 Tab 中的 pane，隐藏本 Tab 中的其他 pane：⌘+ shift +enter , 再次还原</li>
+<li>新建 Tab ：⌘ + t</li>
+<li>Tab 切换：⌘ + arrow 或者 ⌘+shift + [</li>
+<li>改变 Tab 的顺序：⌘ + shift + arrow</li>
+<li>快速切换到 Tab 上：⌘ + Num</li>
+<li>最大化 Tab ： ⌘ + enter 再次还原</li>
+<li>窗口太多，可以使用 ⌘ + / 快速定位到光标所在位置</li>
+<li>一屏显示所有窗口：⌘ + alt+ e</li>
+<li>设置标记：⌘ + shift + m</li>
+<li>跳转到上个标记：⌘ + shift + j</li>
+<li>多个标记切换：⌘ + shift + arrow</li>
+<li>进入回放：⌘ + opt + b</li>
+<li>方向键控制时间 ：arrow</li>
+<li>退出回放：esc</li>
+<li>查找：⌘ + f</li>
+</ul>
+<h3 id="5-oh-my-zsh"><a href="#5-oh-my-zsh" class="headerlink" title="5. oh my zsh"></a>5. oh my zsh</h3><p>默认的 Bash 是黑白的，没有色彩。而 Oh My Zsh 可以带你进入彩色时代。Oh My Zsh 同时提供一套插件和工具，可以简化命令行操作<br>。</p>
+<blockquote>
+<p>安装,<a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="noopener">github 地址</a></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># curl 安装方式</span><br><span class="line">sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># wegt 安装方式</span><br><span class="line">sh -c &quot;$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>卸载 oh-my-zsh</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uninstall_oh_my_zsh</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>安装 zsh-syntax-highlighting</p>
+</blockquote>
+<p>平常用的 ls、cd  等命令输入正确会绿色高亮显示，输入错误会显示其他的颜色。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;/plugins/zsh-syntax-highlighting</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">vi ~/.zshrc</span><br><span class="line"></span><br><span class="line"># plugin中加上zsh-syntax-highlighting</span><br><span class="line">plugins = (</span><br><span class="line">  git</span><br><span class="line">  zsh-syntax-highlighting</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"># 改动生效</span><br><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>安装 zsh-autosuggestions</p>
+</blockquote>
+<p>输入命令时，会给出建议的命令（灰色部分）,按键盘 → 补全</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions</span><br><span class="line"></span><br><span class="line">vi ~/.zshrc</span><br><span class="line"></span><br><span class="line"># plugin中加上zsh-autosuggestions</span><br><span class="line">plugins = (</span><br><span class="line">  git</span><br><span class="line">  zsh-autosuggestions</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"># 改动生效</span><br><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>shell 相关命令</p>
+</blockquote>
+<p>查看系统当前使用的 shell</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ echo $SHELL</span><br><span class="line">/bin/bash</span><br></pre></td></tr></table></figure>
+<p>查看系统是否安装了 zsh</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ cat /etc/shells</span><br><span class="line"></span><br><span class="line">/bin/bash</span><br><span class="line">/bin/csh</span><br><span class="line">/bin/ksh</span><br><span class="line">/bin/sh</span><br><span class="line">/bin/tcsh</span><br><span class="line">/bin/zsh</span><br></pre></td></tr></table></figure>
+<p>切换为 zsh</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chsh -s /bin/zsh∏</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>安装 oh my zsh 后导致已安装的 nvm 不可用</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nvm</span><br><span class="line"></span><br><span class="line">zsh: command not found: nvm</span><br></pre></td></tr></table></figure>
+<p>此时只需重新安装 nvm 即可，见博客<a href="../../../04/10/node版本管理工具nvm的安装及使用">node 版本管理工具 nvm 的安装及使用</a></p>
+<h3 id="6-vs-code"><a href="#6-vs-code" class="headerlink" title="6. vs code"></a>6. vs code</h3><blockquote>
+<p>通过命令行打开项目</p>
+</blockquote>
+<ul>
+<li>在 vscode 界面中 ⌘ + shift+p 打开控制面板</li>
+<li>搜索【Shell 命令：在 PATH 中安装”code”命令】,并选择</li>
+<li>cd 到目录</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd test</span><br></pre></td></tr></table></figure>
+<ul>
+<li>打开</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code .</span><br></pre></td></tr></table></figure>
 
       
 
@@ -209,7 +343,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">homebrew</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Homebrew</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">item2</a>
         		</li>
       		
 		</ul>
@@ -439,11 +577,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">homebrew</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">SSH key</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">homebrew</a>
+                <a href="javascript:void(0)" class="js-tag color4">Homebrew</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">item2</a>
               </li>
             
             <div class="clearfix"></div>
