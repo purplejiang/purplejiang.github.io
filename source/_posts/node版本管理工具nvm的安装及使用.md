@@ -9,7 +9,7 @@ tags:
 ### nvm 是什么
 
 [nvm](https://github.com/creationix/nvm/blob/master/README.md)：node 版本管理工具，一个 nvm 可以管理很多 node 版本和 npm
-版本
+版本。
 
 ### 卸载已经安装到全局的 node、npm(可选步骤)
 
@@ -47,6 +47,8 @@ cd  /usr/local/bin && ls -l | grep "../lib/node_modules/" | awk '{print $9}'| xa
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 ```
 
+其中 v0.33.8 为版本，可更改为你要安装的版本，最新版本参照[github](https://github.com/nvm-sh/nvm)
+
 > wget 安装
 
 ```
@@ -81,12 +83,16 @@ $ touch .bash_profile
 $ open .bash_profile
 ```
 
-- 输入代码并保存：
+- 输入安装提示中代码并保存：
 
 ```
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 ```
+
+具体代码参照安装时的提示，上面代码为示例。如下图
+
+{% asset_img nvm-install.png %}
 
 - 运行命令,更新配置过的环境变量
 
