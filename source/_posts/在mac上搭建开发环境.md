@@ -84,41 +84,7 @@ eg: brew cask install google-chrome //安装goole
 
 如果你不知道应用在 brew-cask 中的 ID，可以先用 brew search 命令搜索， 比如： brew search google
 
-### 3. git
-
-> 使用 Homebrew 安装 git
-
-```
-brew install git
-```
-
-测试是否安装正常
-
-```
-which git
-
-/usr/local/bin/git
-```
-
-设置用户信息
-
-```
-$ git config --global user.name "liuxianan" // 你的github用户名
-$ git config --global user.email  "xxx@qq.com" //填写你的github注册邮箱
-```
-
-iterm2 自带 git 插件，可食用一下简写命令进行 git 操作
-
-- gb --------- git branch
-- ga . --------- git add .
-- gcmsg --------- git commit -m
-- gp --------- git push
-- gst --------- git status
-- gd --------- git diff
-- gcm --------- git checkout master
-- gco --------- git checkout
-
-### 4. iterm2
+### 3. iterm2
 
 > 使用 Homebrew 安装 iterm2
 
@@ -157,7 +123,7 @@ iTerm2 -> Preferences -> Profiles-> General -> Working Directory -> 选择 Re
 - 退出回放：esc
 - 查找：⌘ + f
 
-### 5. oh my zsh
+### 4. oh my zsh
 
 默认的 Bash 是黑白的，没有色彩。而 Oh My Zsh 可以带你进入彩色时代。Oh My Zsh 同时提供一套插件和工具，可以简化命令行操作
 。
@@ -256,6 +222,40 @@ zsh: command not found: nvm
 ```
 
 此时只需重新安装 nvm 即可，见博客[node 版本管理工具 nvm 的安装及使用](../../../04/10/node版本管理工具nvm的安装及使用)
+
+### 5. git
+
+> 使用 Homebrew 安装 git
+
+```
+brew install git
+```
+
+测试是否安装正常
+
+```
+which git
+
+/usr/local/bin/git
+```
+
+设置用户信息
+
+```
+$ git config --global user.name "liuxianan" // 你的github用户名
+$ git config --global user.email  "xxx@qq.com" //填写你的github注册邮箱
+```
+
+iterm2 自带 git 插件，可使用一些简写命令进行 git 操作
+
+- gb --------- git branch
+- ga . --------- git add .
+- gcmsg --------- git commit -m
+- gp --------- git push
+- gst --------- git status
+- gd --------- git diff
+- gcm --------- git checkout master
+- gco --------- git checkout
 
 ### 6. vs code
 
