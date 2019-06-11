@@ -100,6 +100,15 @@ which git
 /usr/local/bin/git
 ```
 
+设置用户信息
+
+```
+$ git config --global user.name "liuxianan" // 你的github用户名
+$ git config --global user.email  "xxx@qq.com" //填写你的github注册邮箱
+```
+
+iterm2 自带 git 插件
+
 ### 4. iterm2
 
 > 使用 Homebrew 安装 iterm2
