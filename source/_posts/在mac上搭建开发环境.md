@@ -73,6 +73,32 @@ brew -v
 brew update
 ```
 
+> Homebrew 下载更新太慢
+
+- 1.下载官网脚本
+```
+curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install >> brew_install
+```
+- 2.下载完毕后在该目录下修改brew_install
+
+这里替换成清华大学的镜像，也可以改为其他地址
+```
+open brew_install
+
+#注释以下两句
+#BREW_REPO = “https://github.com/Homebrew/brew“.freeze 
+#CORE_TAP_REPO = “https://github.com/Homebrew/homebrew-core“.freeze 
+ 
+#修改为以下两句,保存并退出
+BREW_REPO = “https://mirrors.ustc.edu.cn/brew.git “.freeze 
+CORE_TAP_REPO = “https://mirrors.ustc.edu.cn/homebrew-core.git“.freeze 
+```
+- 3.执行该文件
+```
+/usr/bin/ruby brew_install
+```
+
+
 ### 2. Homebrew Cask
 
 brew-cask 允许你使用命令行安装 OS X 应用。几乎所有常用的应用都可以通过 brew-cask（Sublime Text、VirtualBox） 安装，而且
