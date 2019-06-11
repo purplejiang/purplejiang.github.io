@@ -107,7 +107,16 @@ $ git config --global user.name "liuxianan" // 你的github用户名
 $ git config --global user.email  "xxx@qq.com" //填写你的github注册邮箱
 ```
 
-iterm2 自带 git 插件
+iterm2 自带 git 插件，可食用一下简写命令进行 git 操作
+
+- gb --------- git branch
+- ga . --------- git add .
+- gcmsg --------- git commit -m
+- gp --------- git push
+- gst --------- git status
+- gd --------- git diff
+- gcm --------- git checkout master
+- gco --------- git checkout
 
 ### 4. iterm2
 
