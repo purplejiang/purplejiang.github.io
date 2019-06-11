@@ -210,7 +210,7 @@ $ cat /etc/shells
 切换为 zsh
 
 ```
-chsh -s /bin/zsh∏
+chsh -s /bin/zsh
 ```
 
 > 安装 oh my zsh 后导致已安装的 nvm 不可用
