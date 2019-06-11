@@ -39,6 +39,14 @@ sudo rm /usr/local/bin/node
 cd  /usr/local/bin && ls -l | grep "../lib/node_modules/" | awk '{print $9}'| xargs rm
 ```
 
+### 验证是否已安装 nvm
+
+```
+command -v nvm
+```
+
+如果安装成功，应该输出'nvm'
+
 ### 安装 nvm
 
 > curl 安装
@@ -47,7 +55,7 @@ cd  /usr/local/bin && ls -l | grep "../lib/node_modules/" | awk '{print $9}'| xa
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 ```
 
-其中 v0.33.8 为版本，可更改为你要安装的版本，最新版本参照[github](https://github.com/nvm-sh/nvm)
+其中 v0.33.8 为版本，可更改为你要安装的版本，最新版本参照
 
 > wget 安装
 
