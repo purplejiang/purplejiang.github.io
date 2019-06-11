@@ -18,7 +18,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/2019/04/10/node版本管理工具nvm的安装及使用/nvm-install.png">
 <meta property="og:image" content="http://yoursite.com/2019/04/10/node版本管理工具nvm的安装及使用/nvm-success.jpg">
-<meta property="og:updated_time" content="2019-06-10T10:30:29.178Z">
+<meta property="og:updated_time" content="2019-06-11T02:51:19.454Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="node版本管理工具nvm的安装及使用">
 <meta name="twitter:description" content="nvm 是什么nvm：node 版本管理工具，一个 nvm 可以管理很多 node 版本和 npm版本。 卸载已经安装到全局的 node、npm(可选步骤)查看已经安装在全局的模块,卸载后可根据需要重装 1npm ls -g --depth=0 删除全局 node_modules 目录 1sudo rm -rf /usr/local/lib/node_modules">
@@ -182,11 +182,13 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm /usr/local/bin/node</span><br></pre></td></tr></table></figure>
 <p>删除全局 node 模块注册的软链</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd  /usr/local/bin &amp;&amp; ls -l | grep &quot;../lib/node_modules/&quot; | awk &apos;&#123;print $9&#125;&apos;| xargs rm</span><br></pre></td></tr></table></figure>
+<h3 id="验证是否已安装-nvm"><a href="#验证是否已安装-nvm" class="headerlink" title="验证是否已安装 nvm"></a>验证是否已安装 nvm</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">command -v nvm</span><br></pre></td></tr></table></figure>
+<p>如果安装成功，应该输出’nvm’</p>
 <h3 id="安装-nvm"><a href="#安装-nvm" class="headerlink" title="安装 nvm"></a>安装 nvm</h3><blockquote>
 <p>curl 安装</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash</span><br></pre></td></tr></table></figure>
-<p>其中 v0.33.8 为版本，可更改为你要安装的版本，最新版本参照<a href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener">github</a></p>
+<p>其中 v0.33.8 为版本，可更改为你要安装的版本，最新版本参照</p>
 <blockquote>
 <p>wget 安装</p>
 </blockquote>
@@ -486,15 +488,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">vscode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">nvm</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">node</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -506,11 +508,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">homebrew</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SSH key</a>
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -519,6 +517,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">item2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SSH key</a>
               </li>
             
             <div class="clearfix"></div>
