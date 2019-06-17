@@ -249,6 +249,8 @@ zsh: command not found: nvm
 
 此时只需重新安装 nvm 即可，见博客[node 版本管理工具 nvm 的安装及使用](../../../04/10/node版本管理工具nvm的安装及使用)
 
+note: 若安装后当前Tab下nvm可用，但是使用⌘ + t新建的Tab(或通过其他方式新建的Tab)下nvm不可用，此时需要注意配置文件的配置，由于此时使用的终端是zsh，故需在～/.zshrc文件新增配置代码（终端bash的配置文件是～/.bash_profile）
+
 ### 5. git
 
 > 使用 Homebrew 安装 git
