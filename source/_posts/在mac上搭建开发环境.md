@@ -76,28 +76,32 @@ brew update
 > Homebrew 下载更新太慢
 
 - 1.下载官网脚本
+
 ```
 curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install >> brew_install
 ```
-- 2.下载完毕后在该目录下修改brew_install
+
+- 2.下载完毕后在该目录下修改 brew_install
 
 这里替换成清华大学的镜像，也可以改为其他地址
+
 ```
 open brew_install
 
 #注释以下两句
-#BREW_REPO = “https://github.com/Homebrew/brew“.freeze 
-#CORE_TAP_REPO = “https://github.com/Homebrew/homebrew-core“.freeze 
- 
+#BREW_REPO = “https://github.com/Homebrew/brew“.freeze
+#CORE_TAP_REPO = “https://github.com/Homebrew/homebrew-core“.freeze
+
 #修改为以下两句,保存并退出
-BREW_REPO = “https://mirrors.ustc.edu.cn/brew.git “.freeze 
-CORE_TAP_REPO = “https://mirrors.ustc.edu.cn/homebrew-core.git“.freeze 
+BREW_REPO = “https://mirrors.ustc.edu.cn/brew.git “.freeze
+CORE_TAP_REPO = “https://mirrors.ustc.edu.cn/homebrew-core.git“.freeze
 ```
+
 - 3.执行该文件
+
 ```
 /usr/bin/ruby brew_install
 ```
-
 
 ### 2. Homebrew Cask
 
@@ -249,7 +253,7 @@ zsh: command not found: nvm
 
 此时只需重新安装 nvm 即可，见博客[node 版本管理工具 nvm 的安装及使用](../../../04/10/node版本管理工具nvm的安装及使用)
 
-note: 若安装后当前Tab下nvm可用，但是使用⌘ + t新建的Tab(或通过其他方式新建的Tab)下nvm不可用，此时需要注意配置文件的配置，由于此时使用的终端是zsh，故需在～/.zshrc文件新增配置代码（终端bash的配置文件是～/.bash_profile）
+note: 若安装后当前 Tab 下 nvm 可用，但是使用 ⌘ + t 新建的 Tab(或通过其他方式新建的 Tab)下 nvm 不可用，此时需要注意配置文件的配置，由于此时使用的终端是 zsh，故需在～/.zshrc 文件新增配置代码（终端 bash 的配置文件是～/.bash_profiles）
 
 ### 5. git
 
@@ -284,6 +288,28 @@ iterm2 自带 git 插件，可使用一些简写命令进行 git 操作
 - gd --------- git diff
 - gcm --------- git checkout master
 - gco --------- git checkout
+
+> git 命令行中的中、英文切换
+
+切换成英文
+
+```
+普通的命令行
+echo "alias git='LANG=en_GB git'" >> ~/.bashrc
+
+安装了zsh的命令行
+echo "alias git='LANG=en_GB git'" >> ~/.zshrc
+```
+
+切换成中文
+
+```
+普通的命令行
+echo "alias git='LANG=zh_CN git'" >> ~/.bashrc
+
+安装了zsh的命令行
+echo "alias git='LANG=zh_CN git'" >> ~/.zshrc
+```
 
 ### 6. vs code
 
