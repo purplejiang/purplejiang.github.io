@@ -230,73 +230,6 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/11/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2019/06/11/hello-world/" class="archive-article-date">
-  	<time datetime="2019-06-11T02:51:19.447Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more<br>info. If you get any problems when using Hexo, you can find the answer in<br><a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on<br><a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-        
-          <a class="article-more-a" href="/2019/06/11/hello-world/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/06/11/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-在mac上搭建开发环境" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -391,19 +324,19 @@
 
 
   
-    <article id="post-webpack-react" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-react + webpack项目搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/05/webpack-react/">webpack-react</a>
+      <a class="article-title" href="/2019/05/05/react + webpack项目搭建/">react + webpack项目搭建</a>
     </h1>
   
 
         
-        <a href="/2019/05/05/webpack-react/" class="archive-article-date">
+        <a href="/2019/05/05/react + webpack项目搭建/" class="archive-article-date">
   	<time datetime="2019-05-05T11:45:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-05</time>
 </a>
         
@@ -411,58 +344,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<blockquote>
-<p>模块拆分</p>
-</blockquote>
-<p>splitChunks.chunks 可能的值：initial、async、 all。</p>
-<p>默认为 async，表示只会提取异步加载模块的公共代码，initial 表示只会提取初始入口模块的公共代码，all 表示同时提取前两者的代<br>码。</p>
-<blockquote>
-<p>antd 的按需加载</p>
-</blockquote>
-<p>安装 babel-plugin-import 插件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i babel-plugin-import --save-dev</span><br></pre></td></tr></table></figure>
-<p>.babelrc 文件中加入如下配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  ...</span><br><span class="line">  &quot;plugins&quot;: [</span><br><span class="line">    ...</span><br><span class="line">    [</span><br><span class="line">      &quot;import&quot;, &#123;</span><br><span class="line">        &quot;libraryName&quot;: &quot;antd&quot;,</span><br><span class="line">        &quot;style&quot;: true       // style: true | &apos;css&apos; (其中 style: true 会加载 less 文件)</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">    ...</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>使用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import &#123;Button&#125; from &apos;antd&apos;</span><br><span class="line"></span><br><span class="line">&lt;Button type=&quot;primary&quot;&gt;按钮&lt;/Button&gt;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>echarts 按需加载</p>
-</blockquote>
-<ul>
-<li>方法 1</li>
-</ul>
-<p>添加一个 echarts 配置文件</p>
-<p>echart.js</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">// 加载echarts，注意引入文件的路径</span><br><span class="line">import echarts from &apos;echarts/lib/echarts&apos;</span><br><span class="line"></span><br><span class="line">// 再引入你需要使用的图表类型，标题，提示信息等</span><br><span class="line"></span><br><span class="line">import &apos;echarts/lib/chart/bar&apos;</span><br><span class="line">import &apos;echarts/lib/component/legend&apos;</span><br><span class="line"></span><br><span class="line">// 引入折线图</span><br><span class="line">require(&apos;echarts/lib/chart/line&apos;);</span><br><span class="line">// 引入提示框和标题组件</span><br><span class="line">require(&apos;echarts/lib/component/title&apos;);</span><br><span class="line"></span><br><span class="line">export default echarts</span><br></pre></td></tr></table></figure>
-<p>在需要的组件中引入你定义的文件即可</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import echarts from &apos;你的配置文件地址路径/echarts&apos;</span><br><span class="line"></span><br><span class="line">let myChart = echarts.init(document.getElementById(&apos;linechart&apos;));</span><br><span class="line">myChart.setOption(&#123;</span><br><span class="line">  ...</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>方法 2</li>
-</ul>
-<p>安装 babel-plugin-equire</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install babel-plugin-equire -save-dev</span><br></pre></td></tr></table></figure>
-<p>修改.babelrc 文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"> &quot;plugins&quot;: [</span><br><span class="line"> 	...</span><br><span class="line"> 	&quot;equire&quot;</span><br><span class="line">  ...</span><br><span class="line"> ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>echart.js</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// eslint-disable-next-line</span><br><span class="line">const echarts = equire([</span><br><span class="line">  // 写上你需要的</span><br><span class="line">  &apos;bar&apos;,</span><br><span class="line">  &apos;legend&apos;,</span><br><span class="line">  &apos;title&apos;</span><br><span class="line">])</span><br><span class="line">export default echarts</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>报错 bezierEasingMixin</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// https://github.com/ant-design/ant-motion/issues/44</span><br><span class="line">.bezierEasingMixin();</span><br><span class="line">^</span><br><span class="line">Inline JavaScript is not enabled. Is it set in your options?</span><br></pre></td></tr></table></figure>
-<p>如下图</p>
-<img src="/2019/05/05/webpack-react/less-error.png">
-<p>解决方案</p>
-<p>开启 JavaScript 就可以了</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  loader: &quot;less-loader&quot;,</span><br><span class="line">  options: &#123;</span><br><span class="line">    javascriptEnabled: true</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>使用 eslint 时报如下警告</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Warning: React version not specified in eslint-plugin-react settings. See https://github.com/yannickcr/eslint-plugin-react#configuration .</span><br></pre></td></tr></table></figure>
-<p>解决方案:在.babelrc 中添加如下代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  ...</span><br><span class="line">  settings: &#123;</span><br><span class="line">    react: &#123;</span><br><span class="line">      version: &apos;detect&apos;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><a href="https://github.com/yannickcr/eslint-plugin-react#configuration" target="_blank" rel="noopener">详细配置</a></p>
-
+        <h3 id="创建项目并初始化"><a href="#创建项目并初始化" class="headerlink" title="创建项目并初始化"></a>创建项目并初始化</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir webpack-react //新建项目文件夹</span><br><span class="line">cd webpack-react</span><br><span class="line">npm init -y //生成默认package.json文件</span><br></pre></td></tr></table></figure>
+<h3 id="安装-react-相关库"><a href="#安装-react-相关库" class="headerlink" title="安装 react 相关库"></a>安装 react 相关库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i react react-dom --save</span><br></pre></td></tr></table></figure>
+<p>根目录下新建 src 目录，用于存放源代码，src 目录下新建文件 index.html、index.js</p>
+        
+          <a class="article-more-a" href="/2019/05/05/react + webpack项目搭建/#more">more >></a>
+        
       
 
       
@@ -489,7 +376,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/05/05/webpack-react/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/05/05/react + webpack项目搭建/">展开全文 >></a>
         </p>
       
 
@@ -1130,15 +1017,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">nrm</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">npm</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
