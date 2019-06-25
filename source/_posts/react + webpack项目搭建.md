@@ -138,7 +138,7 @@ babel-loader、@babel/core、@babel/preset-react、@babel/preset-env 等为必�
 npm i babel-loader @babel/core @babel/preset-react @babel/preset-env --save-dev
 ```
 
-- babel-loader 处理 ES6 或者 React 的 loader
+- babel-loader 加载 js / jsx 文件,处理 ES6 或者 React 的 loader
 
 - @babel/core babel 核心模块
 
@@ -246,10 +246,10 @@ module.exports={
         use: [
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader, //style-loader把css文件变成style标签插入到head中
           {
-            loader: 'css-loader' //用来处理css中的url路径
+            loader: 'css-loader' //分析@import和url()，引用 css 文件与对应的资源；
           },
           {
-            loader: 'postcss-loader'
+            loader: 'postcss-loader' //用于 css 的兼容性处理，具有众多功能，例如 添加前缀，单位转换 等；
           }
         ],
         exclude: /node_modules/
