@@ -12,7 +12,6 @@ tags:
 mkdir webpack-react //新建项目文件夹
 cd webpack-react
 npm init -y //生成默认package.json文件
-
 ```
 
 ### 安装 react 相关库
@@ -272,7 +271,6 @@ module.exports={
 module.exports = {
   plugin: [require('autoprefix')()]
 };
-
 ```
 
 ### 配置 html-webpack-plugin
@@ -336,7 +334,7 @@ module.exports = {
 }
 ```
 
-此时即可通过 npm run dev 打开一个 8088 的本地服务、进行本地开发了,使用 npm run build 进行打包
+此时即可通过 npm run dev 打开一个 端口为 8088 的本地服务、进行本地开发了,使用 npm run build 进行打包
 
 ### 模块拆分
 
@@ -350,28 +348,33 @@ splitChunks.chunks 可能的值：initial、async、 all。
 安装 babel-plugin-import 插件
 
 ```
-
 npm i babel-plugin-import --save-dev
-
 ```
 
 .babelrc 文件中加入如下配置
 
 ```
-
-{ ... "plugins": [ ... [ "import", { "libraryName": "antd", "style": true // style: true | 'css' (其中 style: true
-会加载 less 文件) } ] ... ] }
-
+{
+  ...
+  "plugins": [
+    ...
+    [
+      "import",
+      {
+        "libraryName": "antd", "style": true
+      } // style: true | 'css' (其中 style: true会加载 less 文件) }
+    ]
+    ...
+  ]
+}
 ```
 
 使用
 
 ```
-
 import {Button} from 'antd'
 
 <Button type="primary">按钮</Button>
-
 ```
 
 ### echarts 按需加载
@@ -383,7 +386,6 @@ import {Button} from 'antd'
 echart.js
 
 ```
-
 // 加载 echarts，注意引入文件的路径 import echarts from 'echarts/lib/echarts'
 
 // 再引入你需要使用的图表类型，标题，提示信息等
@@ -393,17 +395,15 @@ import 'echarts/lib/chart/bar' import 'echarts/lib/component/legend'
 // 引入折线图 require('echarts/lib/chart/line'); // 引入提示框和标题组件 require('echarts/lib/component/title');
 
 export default echarts
-
 ```
 
 在需要的组件中引入你定义的文件即可
 
 ```
-
 import echarts from '你的配置文件地址路径/echarts'
 
-let myChart = echarts.init(document.getElementById('linechart')); myChart.setOption({ ... })
-
+let myChart = echarts.init(document.getElementById('linechart'));
+myChart.setOption({ ... })
 ```
 
 - 方法 2
@@ -411,25 +411,28 @@ let myChart = echarts.init(document.getElementById('linechart')); myChart.setOpt
 安装 babel-plugin-equire
 
 ```
-
 npm install babel-plugin-equire -save-dev
-
 ```
 
 修改.babelrc 文件
 
 ```
 
-{ "plugins": [ ... "equire" ... ] }
-
+{
+  "plugins": [
+    ...
+    "equire"
+    ...
+  ]
+}
 ```
 
 echart.js
 
 ```
-
-// eslint-disable-next-line const echarts = equire([ // 写上你需要的 'bar', 'legend', 'title' ]) export default echarts
-
+// eslint-disable-next-line
+const echarts = equire([ // 写上你需要的 'bar', 'legend', 'title' ])
+export default echarts
 ```
 
 ### 相关报错
@@ -437,10 +440,8 @@ echart.js
 > 报错 bezierEasingMixin
 
 ```
-
-// https://github.com/ant-design/ant-motion/issues/44 .bezierEasingMixin(); ^ Inline JavaScript is not enabled. Is it
-set in your options?
-
+// https://github.com/ant-design/ant-motion/issues/44
+.bezierEasingMixin(); ^ Inline JavaScript is not enabled. Is it set in your options?
 ```
 
 如下图
@@ -452,18 +453,19 @@ set in your options?
 开启 JavaScript 就可以了
 
 ```
-
-{ loader: "less-loader", options: { javascriptEnabled: true } }
-
+{
+  loader: "less-loader",
+  options: {
+    javascriptEnabled: true
+  }
+}
 ```
 
 > 使用 eslint 时报如下警告
 
 ```
-
 Warning: React version not specified in eslint-plugin-react settings. See
 https://github.com/yannickcr/eslint-plugin-react#configuration .
-
 ```
 
 解决方案:在.eslintrc.js 中添加如下代码
@@ -471,7 +473,9 @@ https://github.com/yannickcr/eslint-plugin-react#configuration .
 ```
 module.exports = {
   ...
-  settings: { react: { version: 'detect' } },
+  settings: {
+    react: { version: 'detect' }
+  },
   ...
 }
 ```
