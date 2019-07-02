@@ -234,7 +234,7 @@ module.exports={
 
 ```
 // webapck.common.js
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin'); //抽离样式，生成 css 文件
 const devMode = process.env.NODE_ENV === 'developement';
 module.exports={
   ...
@@ -274,6 +274,8 @@ module.exports = {
 ```
 
 ### 配置 html-webpack-plugin
+
+加载 html 文件，并引入 css / js 文件
 
 ```
 module.exports = {
