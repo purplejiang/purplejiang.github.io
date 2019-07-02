@@ -153,3 +153,24 @@ npm i pre-commit --save-dev
 }
 
 ```
+
+> 使用 eslint 时报如下警告
+
+```
+Warning: React version not specified in eslint-plugin-react settings. See
+https://github.com/yannickcr/eslint-plugin-react#configuration .
+```
+
+解决方案:在.eslintrc.js 中添加如下代码
+
+```
+module.exports = {
+  ...
+  settings: {
+    react: { version: 'detect' }
+  },
+  ...
+}
+```
+
+[详细配置](https://github.com/yannickcr/eslint-plugin-react#configuration)
